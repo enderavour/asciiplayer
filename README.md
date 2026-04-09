@@ -8,23 +8,27 @@
 ### Requirements:
 - OpenCV (2)
 - ffmpeg 
-- miniaudio (already comes in source)
+- miniaudio 
 
 ### Build and Usage:
 1. Clone the Github repository of the project:
 ```cmd
 git clone https://github.com/enderavour/asciiplayer.git && cd asciiplayer
 ```
-2. Download and extract OpenCV into the root of the project.
-3. Run ```build_win.bat``` or type in manually:
+2. Navigade into ```include``` and download the ```miniaudio.h``` header:
+```cmd
+curl -o miniaudio.h https://raw.githubusercontent.com/mackron/miniaudio/master/miniaudio.h
+```
+3. Download and extract OpenCV into the root of the project.
+4. Run ```build_win.bat``` or type in manually:
 ```cmd
 cmake -DCMAKE_PREFIX_PATH=.\opencv\build ..
 ```
-4. Navigate to ```build``` and run
+5. Navigate to ```build``` and run
 ```
 cmake --build .
 ```
-5. Navigate into Debug directory and run the program:
+6. Navigate into Debug directory and run the program:
 ```
 asciiplayer video.mp4
 ```

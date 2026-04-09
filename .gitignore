@@ -1,3 +1,4 @@
 /.vscode
 /opencv
 /build
+/src/include/miniaudio.h
