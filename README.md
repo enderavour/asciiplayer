@@ -1,17 +1,33 @@
 # asciivid - simple ASCII video displayer built using OpenCV
 
+## Descripion:
+- The project was rewritten and resructured.
+- Currently it is still binded to Windows, but will be ported to other systems.
+- Extracts audio via ffmpeg, converts frames into videos and renders them in terminal. 
+
 ### Requirements:
-- OpenCV
+- OpenCV (2)
 - ffmpeg 
-- Windows environment 
-- miniaudio
+- miniaudio (already comes in source)
 
-### Usage:
+### Build and Usage:
+1. Clone the Github repository of the project:
 ```cmd
-asciivid <video_name.mp4>
+git clone https://github.com/enderavour/asciiplayer.git && cd asciiplayer
 ```
-
-### Notes:
-- This project was built and tested only on Windows x64 system 
-- Requires execution in Windows requirements as uses WinAPI
-- The Makefile is build specifically for MSVC
+2. Download and extract OpenCV into the root of the project.
+3. Run ```build_win.bat``` or type in manually:
+```cmd
+cmake -DCMAKE_PREFIX_PATH=.\opencv\build ..
+```
+4. Navigate to ```build``` and run
+```
+cmake --build .
+```
+5. Navigate into Debug directory and run the program:
+```
+asciiplayer video.mp4
+```
+## Notes
+- If there are DLL errors while trying to start the application, just move the required DLL's into ```Debug``` folder, place them near the executable
+- Contributors and improvement ideas are welcome. 
