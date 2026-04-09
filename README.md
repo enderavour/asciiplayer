@@ -1,4 +1,4 @@
-# asciivid - simple ASCII video displayer built using OpenCV
+# asciiplayer - simple ASCII video displayer built using OpenCV
 
 ## Descripion:
 - The project was rewritten and resructured.
