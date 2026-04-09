@@ -1,5 +1,7 @@
 # asciiplayer - simple ASCII video displayer built using OpenCV
 
+![Video](./preview/preview.gif)
+
 ## Descripion:
 - The project was rewritten and resructured.
 - Currently it is still binded to Windows, but will be ported to other systems.
